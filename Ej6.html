@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envía un Mensaje Motivacional</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .formulario {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .campo {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+
+        .boton-enviar {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .boton-enviar:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Envía un Mensaje Motivacional</h1>
+    <form action="mailto:lfrancoepifani@gmail.com" method="post" class="formulario">
+        <div class="campo">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" required placeholder="Nombre">
+        </div>
+        <div class="campo">
+            <label for="lastname">Apellido</label>
+            <input type="text" name="lastname" required placeholder="Apellido">
+        </div>
+        <div class="campo">
+            <label for="message">Mensaje</label>
+            <textarea name="message" required rows="4"></textarea>
+        </div>
+        <div class="campo">
+            <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+        </div>
+    </form>
+</body>
+</html>
